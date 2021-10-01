@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="bg">
+      <h2>Simple Calculator</h2>
+      <h3>First Number:{{num1}}</h3>
+      <h3>Second Number:{{num2}}</h3>
+      <br>
+      <div id="bu">
+        <button (click)="add()" id="a">Addition of two numbers</button>
+        <button (click)="sub()" id="b">Subtraction of two numbers</button>
+        <button (click)="mul()" id="c">Multiplication of two numbers</button>
+        <button (click)="divi()" id="d">Division of two numbers</button>
+        <button (click)="modu()" id="e">Modulus</button>
+        <button (click)="facto()" id="f">Factorial of a number</button>
+        <button (click)="primenum()" id="g">Checks Prime or Comosite number</button>
+      </div>
+      <div id="dis">
+        <h4 *ngIf="check==0">Sum is {{sum}}</h4>
+        <h4 *ngIf="check==1">Difference is {{dif}}</h4>
+        <h4 *ngIf="check==2">Product is {{mult}}</h4>
+        <h4 *ngIf="check==3">Quotient is {{quo}}</h4>
+        <h4 *ngIf="check==4">Remainder is {{modulo}}</h4>
+        <h4 *ngIf="check==5">Factorial of {{num1}} is {{fact1}}</h4>
+        <h4 *ngIf="check==5">Factorial of {{num2}} is {{fact2}}</h4>
+        <h4 *ngIf="flag1==0 && check==6">{{num1}} is Prime number</h4>
+        <h4 *ngIf="flag1!=0 && check==6">{{num1}} is Composite number</h4>
+        <h4 *ngIf="flag2==0 && check==6">{{num2}} is Prime number</h4>
+        <h4 *ngIf="flag2!=0 && check==6">{{num2}} is Composite number</h4>
+      </div>
+    </div>
+  </body>
+</html>
