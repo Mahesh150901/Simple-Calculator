@@ -5,12 +5,18 @@ body
 }
 #bg
 {
-    background-color: snow;
+    background-color:peru;
+    position: relative;
+    top: 60px;
 }
-h2
+#tsp
+{
+    padding: 200px;
+}
+#tm
 {
     color: royalblue;
-    font-size: 60px;
+    font-size: 55px;
     font-family: 'Times New Roman';
     text-align: center;
 }
@@ -28,9 +34,7 @@ h3
 }
 button
 {
-    background-color:teal;
     border:1px solid black;
-    color:floralwhite;
     border-width: 1px;
     margin: 15px;
     padding: 20px;
@@ -41,7 +45,7 @@ button
 }
 button:hover
 {
-    background-color:aqua;
+    background-color:teal;
     color:rgb(236, 130, 30);
 }
 #a
@@ -68,13 +72,11 @@ button:hover
 {
   padding: 20px 102px;  
 }
-h4
+mat-card-subtitle
 {
-    color:rgb(184, 2, 2);
+    color:rgb(255, 0, 0);
     font-size: 50px;
     font-family: 'Times New Roman';
-    text-align: center;
     position: relative;
-    top: -500px;
-    left: 250px;
+    left:600px;
 }
